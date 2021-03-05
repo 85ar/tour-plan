@@ -509,7 +509,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -553,7 +553,7 @@ template {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
-    min-width: 279px;
+    min-width: 278px;
     width: 92%;
   }
 }
