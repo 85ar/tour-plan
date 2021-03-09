@@ -18,6 +18,10 @@ img {
   max-width: 100%;
 }
 
+.booking {
+  font-family: 'Nunito', sans-serif;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -662,6 +666,7 @@ template {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
+  outline: none;
 }
 
 .slider-button--next {
@@ -860,7 +865,7 @@ template {
   .hotel__slider {
     margin-bottom: 30px;
   }
-  .hotel__right {
+  .hotel-right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -964,6 +969,7 @@ template {
   }
   .booking {
     width: 100%;
+    margin-bottom: 30px;
   }
   .map {
     width: 100%;
@@ -986,6 +992,9 @@ template {
   .hotel__slider {
     margin-bottom: 20px;
   }
+  .booking {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -996,8 +1005,29 @@ template {
   .hotel {
     padding-top: 0;
   }
+  .hotel-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .hotel-info {
+    margin-bottom: 18px;
+  }
   .hotel-info__description {
     max-width: 280px;
+  }
+  .slider {
+    height: 179px;
+  }
+  .booking {
+    height: 210px;
+    margin-bottom: 20px;
+  }
+  .map {
+    height: 172px;
   }
 }
 /*# sourceMappingURL=style.css.map */
