@@ -23,7 +23,7 @@ function init() {
     zoom: 16,
   });
 var myPlacemark = new ymaps.Placemark([7.89074, 98.294774], {
-  hintContent: "DoubleTree by Hilton Phuket"
+  hintContent: "Grand Hilton Hotel",
 });
 myMap.geoObjects.add(myPlacemark); 
 }
