@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
 
@@ -9,8 +9,8 @@ const swiper = new Swiper(".swiper-container", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".slider-button--next",
-    prevEl: ".slider-button--prev",
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
   },
   effect: "fade",
 });
@@ -25,5 +25,5 @@ function init() {
 var myPlacemark = new ymaps.Placemark([7.89074, 98.294774], {
   hintContent: "Grand Hilton Hotel",
 });
-myMap.geoObjects.add(myPlacemark); 
+myMap.geoObjects.add(myPlacemark);
 }
