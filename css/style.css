@@ -939,6 +939,9 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -962,6 +965,9 @@ template {
   }
   #map {
     width: 340px;
+  }
+  .newsletter {
+    padding: 92px 0 93px 0;
   }
 }
 
@@ -1003,6 +1009,9 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .hotel {
+    padding-bottom: 50px;
+  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1011,6 +1020,12 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .hotel-info__text {
     width: 100%;
@@ -1043,19 +1058,21 @@ template {
   .slider {
     height: 350px;
   }
-  .hotel-right {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    min-height: 450px;
-  }
   .booking {
     width: 100%;
     margin-bottom: 30px;
   }
   #map {
     width: 100%;
+  }
+  .newsletter__title {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 37px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
   }
   .newsletter-wrapper {
     max-width: 576px;
@@ -1068,6 +1085,9 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .subscribe {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1076,6 +1096,7 @@ template {
   }
   .hotel {
     padding-top: 0;
+    padding-bottom: 40px;
   }
   .hotel-info__description {
     max-width: 280px;
@@ -1092,12 +1113,6 @@ template {
   .newsletter {
     padding: 76px 0 83px 0;
   }
-  .newsletter__title {
-    margin-bottom: 37px;
-  }
-  .subscribe {
-    width: 100%;
-  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -1107,6 +1122,7 @@ template {
   }
   .hotel {
     padding-top: 0;
+    padding-bottom: 40px;
   }
   .hotel-right {
     display: -webkit-box;
@@ -1131,6 +1147,13 @@ template {
   }
   #map {
     height: 173px;
+  }
+  .subscribe {
+    min-width: 280px;
+  }
+  .newsletter__title {
+    margin-top: 0;
+    margin-bottom: 37px;
   }
 }
 /*# sourceMappingURL=style.css.map */
