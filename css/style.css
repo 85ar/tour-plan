@@ -808,9 +808,11 @@ template {
   cursor: pointer;
 }
 
-#yaMap {
+#map {
   border-radius: 10px;
   overflow: hidden;
+  width: 347px;
+  height: 213px;
 }
 
 @media (max-width: 1200px) {
@@ -874,7 +876,7 @@ template {
   .slider {
     width: 100%;
   }
-  .map {
+  #map {
     width: 340px;
   }
 }
@@ -968,7 +970,7 @@ template {
     width: 100%;
     margin-bottom: 30px;
   }
-  .map {
+  #map {
     width: 100%;
   }
 }
@@ -1023,8 +1025,8 @@ template {
     height: 210px;
     margin-bottom: 20px;
   }
-  .map {
-    height: 172px;
+  #map {
+    height: 173px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,9 +15,15 @@ const swiper = new Swiper(".swiper-container", {
   effect: "fade",
 });
 
-ymaps.ready(function init() {
-  var myMap = new ymaps.Map("yaMap", {
+ymaps.ready(init);
+
+function init() {
+  var myMap = new ymaps.Map("map", {
     center: [7.89074, 98.294774],
     zoom: 16,
   });
+var myPlacemark = new ymaps.Placemark([7.89074, 98.294774], {
+  hintContent: "DoubleTree by Hilton Phuket"
 });
+myMap.geoObjects.add(myPlacemark); 
+}
