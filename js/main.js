@@ -14,3 +14,10 @@ const swiper = new Swiper(".swiper-container", {
   },
   effect: "fade",
 });
+
+ymaps.ready(function init() {
+  var myMap = new ymaps.Map("yaMap", {
+    center: [7.89074, 98.294774],
+    zoom: 16,
+  });
+});
