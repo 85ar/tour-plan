@@ -37,3 +37,10 @@ var myPlacemark = new ymaps.Placemark([7.89074, 98.294774], {
 });
 myMap.geoObjects.add(myPlacemark);
 }
+
+$(document).ready(function () {
+  $(".parallax-window").parallax({
+    imageSrc: "img/newsletter-bg.jpg",
+    speed: 0.4,
+  });
+});
