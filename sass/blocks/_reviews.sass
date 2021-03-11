@@ -7,6 +7,7 @@
     line-height: 45px
     text-align: center
     text-transform: uppercase
+    margin: 0
     margin-bottom: 70px
   &-slider
     &__item
@@ -22,11 +23,41 @@
       &::before
         content: ""
         position: absolute
+        left: 62px
+        top: 13px
         width: 70px
         height: 47px
         background-image: url(../img/quote-left.svg)
         background-repeat: no-repeat
-
+      &::after
+        content: ""
+        position: absolute
+        right: 62px
+        top: 118px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      min-width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 10px
+      background-position: center
+      border: none
+      background-color: transparent
+      cursor: pointer
+      z-index: 99
+      outline: none
+      &--prev
+        background-image: url(../img/arrow-prev-secondary.svg)
+        left: 0
+      &--next
+        background-image: url(../img/arrow-next-secondary.svg)
+        right: 0
     &__profile
       display: flex
       flex-direction: column
@@ -56,7 +87,10 @@
       display: flex
       align-items: center
     &__text
+      max-width: 537px
       font-style: normal
       font-weight: normal
       font-size: 12px
       line-height: 160%
+      text-align: justify
+      margin: auto
