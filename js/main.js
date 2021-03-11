@@ -1,19 +1,29 @@
-const swiper = new Swiper(".hotel-slider", {
-  // Optional parameters
+var hotelSlider = new Swiper(".hotel-slider", {
   loop: true,
 
-  // Keyboard control
   keyboard: {
     enabled: true,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: ".hotel-slider__button--next",
     prevEl: ".hotel-slider__button--prev",
   },
   effect: "fade",
 });
+var reviewsSlider = new Swiper(".reviews-slider", {
+  loop: true,
+
+  // keyboard: {
+  //   enabled: true,
+  // },
+
+  navigation: {
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
+  },
+});
+
 
 ymaps.ready(init);
 
