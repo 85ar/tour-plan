@@ -847,7 +847,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 731px;
-  height: 75px;
+  height: 100%;
   margin: auto;
 }
 
