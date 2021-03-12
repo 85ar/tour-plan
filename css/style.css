@@ -819,11 +819,8 @@ template {
 
 .newsletter {
   position: relative;
+  width: 100%;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
-  position: background-center;
-  background-position: center;
-  background-size: cover;
 }
 
 .newsletter::before {
@@ -850,6 +847,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 731px;
+  height: 75px;
   margin: auto;
 }
 
