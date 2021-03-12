@@ -847,7 +847,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 731px;
-  height: 75px;
+  height: 100%;
   margin: auto;
 }
 
@@ -889,13 +889,16 @@ template {
 
 .subscribe__button {
   position: absolute;
-  min-width: 65px;
+  width: 65px;
   right: 0;
   top: 0;
   height: 100%;
   border: none;
   background-color: #EC1F46;
   color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .reviews {
@@ -1039,6 +1042,8 @@ template {
   line-height: 160%;
   text-align: justify;
   margin: auto;
+  overflow: auto;
+  height: 110px;
 }
 
 @media (max-width: 1200px) {
@@ -1092,7 +1097,7 @@ template {
             flex-direction: column;
   }
   .hotel__slider {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
   .hotel-right {
     -webkit-box-orient: horizontal;
@@ -1339,6 +1344,19 @@ template {
     max-width: 245px;
     margin: auto;
     margin-bottom: 42px;
+  }
+  .reviews-slider__item {
+    min-width: 281px;
+    height: 100%;
+  }
+  .reviews-slider__username {
+    margin-top: 0;
+  }
+  .reviews-slider__profile {
+    margin-bottom: 42px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
