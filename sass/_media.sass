@@ -52,6 +52,7 @@
   .newsletter
     padding: 92px 0 93px 0
   .reviews
+    padding: 40px 0 60px 0
     &-slider
       &__item
         max-width: 580px
@@ -61,13 +62,13 @@
       margin-top: 0
       margin-bottom: 50px
   .activities
+    padding-bottom: 70px
     &-wrapper
       flex-wrap: wrap
-    &__card
-      mb
+      height: 530px
   .card
     width: 340px
-    height: 230px
+    height: 255px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -158,13 +159,13 @@
           right: 50%
           margin-right: -85px
           transform: translate(50%, 0)
-
     &__title
       font-size: 18px
       line-height: 23px
   .activities
     padding-top: 40px
     padding-bottom: 60px
+    margin: 0
   .card
     width: 49%
     height: 255px
@@ -185,8 +186,16 @@
     margin-bottom: 20px
   .newsletter
     padding: 76px 0 83px 0
+  .activities
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 23px
+    &-wrapper
+      height: 1088px
   .card
     width: 100%
+    height: 255px
 @media (min-width: 320px) and (max-width: 480px)
   .container
     min-width: 278px
@@ -231,3 +240,13 @@
         margin-bottom: 42px
       &__text
         text-align: left
+      .card
+        width: 100%
+      .activities
+        padding-top: 40px
+        padding-bottom: 60px
+        &__title
+          font-size: 18px
+          line-height: 23px
+          padding-bottom: 36px
+
