@@ -26,6 +26,10 @@ img {
   font-family: 'Nunito', sans-serif;
 }
 
+.advisor-card__button {
+  font-family: 'Nunito', sans-serif;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -824,6 +828,123 @@ template {
   overflow: hidden;
   width: 347px;
   height: 213px;
+}
+
+.tripAdvisor-card-full {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
+.otherPackages {
+  padding: 40px 0 70px 0;
+}
+
+.otherPackages__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.otherPackages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.advisor-card__info {
+  background-color: #0A223D;
+  border-radius: 0px 8px 8px 0px;
+  color: #fff;
+}
+
+.advisor-card__offer {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 8px 12px 7px 11px;
+  background-color: #EC1F46;
+  color: #fff;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.advisor-card__hotelImage {
+  width: 350px;
+  height: 500px;
+}
+
+.advisor-card__hotelImage-full {
+  width: 366px;
+  height: 500px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.advisor-card__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.advisor-card__hotelDescription {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+
+.advisor-card__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.advisor-card__price-regularPrice {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.advisor-card__price-descountPrice {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.advisor-card__button {
+  padding: 11px 27px 10px 26px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .newsletter {
