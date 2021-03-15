@@ -830,15 +830,26 @@ template {
   height: 213px;
 }
 
+h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
 .tripAdvisor-card-full {
+  width: 730px;
+  height: 500px;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 0px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-column: 1 / span 2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / span 2;
+  grid-area: 1 / 1 / 2 / 3;
 }
 
 .otherPackages {
@@ -852,26 +863,63 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 65px;
 }
 
 .otherPackages-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 30px 30px;
+}
+
+.advisor-card__image {
+  width: 350px;
+  height: 250px;
+  position: relative;
+}
+
+.advisor-card__image-full {
+  width: 366px;
+  height: 500px;
+  position: relative;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .advisor-card__info {
+  padding: 30px 21px 25px 32px;
+  background-color: #0A223D;
+  border-radius: 0px 0px 8px 8px;
+  color: #fff;
+  width: 350px;
+  height: 250px;
+}
+
+.advisor-card__info-full {
+  width: 364px;
+  height: 500px;
   background-color: #0A223D;
   border-radius: 0px 8px 8px 0px;
   color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 46px 21px 30px 43px;
 }
 
 .advisor-card__offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -883,13 +931,14 @@ template {
 }
 
 .advisor-card__hotelImage {
-  width: 350px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .advisor-card__hotelImage-full {
-  width: 366px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   border-radius: 8px 0px 0px 8px;
 }
 
@@ -898,6 +947,49 @@ template {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
+  margin-bottom: 23px;
+}
+
+.advisor-card__title-full {
+  margin-bottom: 27px;
+}
+
+.advisor-card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.advisor-card__icon {
+  margin-right: 14px;
+}
+
+.advisor-card__room {
+  margin-bottom: 24px;
+}
+
+.advisor-card__room-full {
+  margin-bottom: 37px;
+}
+
+.advisor-card__buttonPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .advisor-card__hotelDescription {
@@ -905,6 +997,7 @@ template {
   font-weight: normal;
   font-size: 14px;
   line-height: 160.6%;
+  margin-bottom: 34px;
 }
 
 .advisor-card__description {
@@ -945,6 +1038,10 @@ template {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.stars {
+  margin-bottom: 5px;
 }
 
 .newsletter {
