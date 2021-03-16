@@ -3,8 +3,8 @@ h2, h3, p
   padding: 0
 
 .tripAdvisor-card-wide
-  width: 730px
-  height: 500px
+  max-width: 730px
+
   display: grid
   grid-template-columns: 1fr 1fr
   grid-template-rows: 1fr
@@ -24,10 +24,10 @@ h2, h3, p
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     grid-template-rows: 1fr 1fr
-    gap: 30px 30px
+    grid-gap: 30px 30px
 
 .advisor-card-image-wide
-  width: 366px
+  max-width: 366px
   height: 500px
   position: relative
   grid-area: 1 / 1 / 2 / 2
@@ -48,7 +48,7 @@ h2, h3, p
     color: $light
     border-radius: 0px 4px 4px 0px
 .advisor-card-info-wide
-  width: 364px
+  max-width: 364px
   height: 500px
   background-color: $dark
   border-radius: 0px 8px 8px 0px
@@ -66,9 +66,8 @@ h2, h3, p
 .advisor-card-room-wide
   margin-bottom: 37px
 
-
 .advisor-card-image
-  width: 350px
+  max-width: 350px
   height: 250px
   position: relative
   &__hotelImage
@@ -92,7 +91,7 @@ h2, h3, p
   background-color: $dark
   border-radius: 0px 0px 8px 8px
   color: $light
-  width: 350px
+  max-width: 350px
   height: 250px
   &__title
     font-style: normal
