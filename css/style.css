@@ -1384,6 +1384,12 @@ h2, h3, p {
   white-space: nowrap;
 }
 
+.footer {
+  background-color: #0A223D;
+  color: #fff;
+  padding: 108px 165px 46px 161px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
