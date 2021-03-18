@@ -14,10 +14,6 @@ var hotelSlider = new Swiper(".hotel-slider", {
 var reviewsSlider = new Swiper(".reviews-slider", {
   loop: true,
 
-  // keyboard: {
-  //   enabled: true,
-  // },
-
   navigation: {
     nextEl: ".reviews-slider__button--next",
     prevEl: ".reviews-slider__button--prev",
@@ -37,3 +33,11 @@ var myPlacemark = new ymaps.Placemark([7.89074, 98.294774], {
 });
 myMap.geoObjects.add(myPlacemark);
 }
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке Меню");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+});
