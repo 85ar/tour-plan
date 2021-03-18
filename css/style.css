@@ -1844,7 +1844,7 @@ h2, h3, p {
     right: 0;
     bottom: 0;
     top: 78px;
-    padding-top: 30px;
+    padding-top: 31px;
   }
   .navbar-bottom--visible {
     display: block;
@@ -1854,9 +1854,17 @@ h2, h3, p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 0;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
+  }
+  .navbar-menu__item-location {
+    margin-bottom: 37px;
+  }
+  .navbar-menu__item-userBlock {
+    margin-bottom: 27px;
+    padding-top: 0;
   }
   .navbar-menu__item--mobile--visible {
     display: block;
@@ -2200,6 +2208,9 @@ h2, h3, p {
   .container {
     min-width: 278px;
     width: 92%;
+  }
+  .navbar-menu__item-location {
+    width: 245px;
   }
   .hotel {
     padding-top: 0;
