@@ -1512,6 +1512,10 @@ h2, h3, p {
   margin-bottom: 20px;
 }
 
+.footer__icon {
+  padding-top: 5px;
+}
+
 .footer__icon-wrapper {
   min-width: 40px;
 }
@@ -1622,6 +1626,15 @@ h2, h3, p {
   font-size: 12px;
   line-height: 15px;
   color: #fff;
+}
+
+.footer__phones, .footer__mail {
+  text-decoration: none;
+  color: #BDBDBD;
+}
+
+.footer__phones {
+  white-space: nowrap;
 }
 
 @media (max-width: 1200px) {
@@ -1755,6 +1768,7 @@ h2, h3, p {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     grid-column: span 2;
+    max-width: 104px;
   }
   .footer__social-network {
     -ms-grid-row: 1;
@@ -1786,7 +1800,7 @@ h2, h3, p {
     grid-column: span 5;
     -ms-grid-row: 4;
     grid-row: 4;
-    margin-bottom: 56px;
+    margin-bottom: 18px;
   }
   .footer__agreements {
     -ms-grid-column: 1;
