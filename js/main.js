@@ -57,4 +57,14 @@ $(document).ready(function () {
      modalOverlay.removeClass("modal__overlay--visible");
      modalDialog.removeClass("modal__dialog--visible");
    }
+$(document).on("keyup", function (esc) {
+  if (esc.keyCode == 27) {
+    esc.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+  }
+});
+
 });
