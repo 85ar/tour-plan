@@ -257,7 +257,9 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
               <!-- /.button booking__button -->
             </div>
             <!-- /.booking -->
@@ -788,11 +790,9 @@ quest"
       <footer class="footer">
         <div class="container">
           <div class="footer-wrapper">
-            <img
-              src="img/vertical-logo.svg"
-              alt="Logo: Best Tour Plan"
-              class="logo footer__logo"
-            />
+            <a href="index.html" class="logo footer__logo">
+              <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
+            </a>
             <div class="footer__list footer__categories">
               <h3 class="footer__title">ALL CATEGORIES</h3>
               <ul class="footer__ul">
@@ -953,7 +953,7 @@ quest"
               <h3 class="footer__title footer__title--mb-3">
                 Send us a message
               </h3>
-              <form action="send.php" method="POST" class="footer__form">
+              <form action="send.php" method="POST" class="form">
                 <input
                   type="text"
                   class="input footer__input"
@@ -969,7 +969,7 @@ quest"
                 <textarea
                   cols="30"
                   rows="10"
-                  class="footer__message"
+                  class="message footer__message"
                   placeholder="Message"
                   name="message"
                 ></textarea>
@@ -1000,7 +1000,45 @@ quest"
         </div>
       </footer>
       <!-- /.footer -->
+      <div class="modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+          <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="Icon: close" />
+          </a>
+          <h3 class="modal__title modal__title--mb-3">Booking</h3>
+          <form class="form">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+            />
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Phone Number*"
+            />
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Email*"
+            />
+            <textarea
+              cols="30"
+              rows="10"
+              class="message modal__message"
+              placeholder="Message"
+            ></textarea>
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </form>
+        </div>
+        <!-- /.modal__dialog -->
+      </div>
+      <!-- /.modal -->
     </section>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
