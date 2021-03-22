@@ -514,9 +514,12 @@
         padding: 15px 40px 10px 40px
         max-width: 340px
         min-width: 315px
-        overflow-y: auto
-        height: 95vh
-
     &__input
       font-size: 10px
 
+@media (max-height: 527px)
+  .modal
+    &__dialog
+      &--visible
+        overflow-y: auto
+        max-height: 95vh

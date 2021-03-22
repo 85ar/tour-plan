@@ -1792,6 +1792,7 @@ h2, h3, p {
 }
 
 .thankyou__button {
+  padding: 0;
   width: 120px;
   min-height: 35px;
   font-weight: 600;
@@ -2549,11 +2550,16 @@ h2, h3, p {
     padding: 15px 40px 10px 40px;
     max-width: 340px;
     min-width: 315px;
-    overflow-y: auto;
-    height: 95vh;
   }
   .modal__input {
     font-size: 10px;
+  }
+}
+
+@media (max-height: 527px) {
+  .modal__dialog--visible {
+    overflow-y: auto;
+    max-height: 95vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
