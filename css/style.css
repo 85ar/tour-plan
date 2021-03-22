@@ -1751,7 +1751,6 @@ h2, h3, p {
 
 .modal__button {
   min-width: 160px;
-  min-height: 50px;
 }
 
 .modal__info {
@@ -2547,7 +2546,7 @@ h2, h3, p {
             justify-content: space-between;
   }
   .modal__dialog--visible {
-    padding: 15px 40px 10px 40px;
+    padding: 15px 40px 15px 40px;
     max-width: 340px;
     min-width: 315px;
   }
