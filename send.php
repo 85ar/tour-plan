@@ -30,16 +30,16 @@ try {
     $mail->isSMTP();
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 4;
+    //$mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.rambler.ru'; // SMTP сервера вашей почты
-    $mail->Username   = '85ar@rambler.ru'; // Логин на почте
-    $mail->Password   = 'rhjrjlbk7'; // Пароль на почте
+    $mail->Host       = 'vartur.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'artur.vlv@vartur.ru'; // Логин на почте
+    $mail->Password   = 'H5xh!root7'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('85ar@rambler.ru', 'Артур'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('artur.vlv@vartur.ru', 'Артур'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('artur.vlv@yandex.ru');
