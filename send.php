@@ -11,17 +11,17 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 if(isset($_POST['email'])){
-    $title = "Новый подписчик Best Tour Plan";
+    $title = "New subscriber Best Tour Plan";
     $body = "
-    <h2>Новый подписчик</h2>
-    <b>Почта:</b> $email";
+    <h2>New subscriber</h2>
+    <b>Email:</b> $email";
 } else {
-    $title = "Новое обращение Best Tour Plan";
+    $title = "New appeal Best Tour Plan";
     $body = "
-    <h2>Новое обращение</h2>
-    <b>Имя:</b> $name<br>
-    <b>Телефон:</b> $phone<br><br>
-    <b>Сообщение:</b><br>$message";
+    <h2>New appeal</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br><br>
+    <b>Message:</b><br>$message";
     }
 
 // Настройки PHPMailer
@@ -57,7 +57,7 @@ else {$result = "error";}
 
 } catch (Exception $e) {
     $result = "error";
-    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+    $status = "The message was not sent. The reason for the error: {$mail->ErrorInfo}";
 }
 
 // Отображение результата

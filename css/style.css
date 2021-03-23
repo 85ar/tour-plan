@@ -73,6 +73,13 @@ img {
       flex-wrap: wrap;
 }
 
+.form label.invalid {
+  position: absolute;
+  font-size: 14px;
+  color: #EC1F46;
+  font-weight: bold;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -441,6 +448,12 @@ template {
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
+  border-radius: 6px;
+}
+
+.navbar__search #text-error {
+  top: 21px;
+  right: 70px;
 }
 
 .navbar-bottom {
@@ -485,7 +498,6 @@ template {
   display: flex;
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
   height: 40px;
 }
 
@@ -500,6 +512,7 @@ template {
   line-height: 15px;
   color: #333333;
   outline: none;
+  border-radius: 6px 0 0 6px;
 }
 
 .search__button {
@@ -511,6 +524,7 @@ template {
   border: none;
   background-color: #EC1F46;
   outline: none;
+  border-radius: 0 6px 6px 0;
 }
 
 .user {
@@ -566,7 +580,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 17px;
   padding-bottom: 70px;
 }
 
@@ -594,7 +608,7 @@ template {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .hotel-name {
@@ -1159,7 +1173,11 @@ h2, h3, p {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
+}
+
+.subscribe #email-error {
+  top: 38px;
+  right: 69px;
 }
 
 .subscribe__input {
@@ -1174,7 +1192,7 @@ h2, h3, p {
   font-size: 14px;
   line-height: 18px;
   outline: none;
-  type: su;
+  type: submit;
 }
 
 .subscribe__button {
@@ -1190,6 +1208,7 @@ h2, h3, p {
   text-overflow: ellipsis;
   white-space: nowrap;
   outline: none;
+  border-radius: 0 4px 4px 0;
 }
 
 .reviews {
@@ -1516,6 +1535,7 @@ h2, h3, p {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 
 .footer__ul {
@@ -1580,6 +1600,10 @@ h2, h3, p {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1589,6 +1613,16 @@ h2, h3, p {
   font-size: 12px;
   line-height: 15px;
   color: #0A223D;
+}
+
+.footer__input-group #name-error {
+  top: 34px;
+  right: 288px;
+}
+
+.footer__input-group #phone-error {
+  top: 34px;
+  right: 5px;
 }
 
 .footer__message {
@@ -1664,6 +1698,19 @@ h2, h3, p {
   white-space: nowrap;
 }
 
+.footer__infoButton {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1727,7 +1774,7 @@ h2, h3, p {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1743,10 +1790,14 @@ h2, h3, p {
   line-height: 15px;
   width: 100%;
   max-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   color: #BDBDBD;
   resize: none;
   outline: none;
+}
+
+.modal__infoButton {
+  margin-top: 15px;
 }
 
 .modal__button {
@@ -1772,6 +1823,21 @@ h2, h3, p {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+
+.modal__form #name-error {
+  top: 117px;
+  right: 95px;
+}
+
+.modal__form #phone-error {
+  top: 182px;
+  right: 94px;
+}
+
+.modal__form #email-error {
+  top: 247px;
+  right: 97px;
 }
 
 .thankyou {
@@ -1825,7 +1891,7 @@ h2, h3, p {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1930,9 +1996,12 @@ h2, h3, p {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 38px;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .footer__input-group #name-error {
+    right: 306px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -2000,6 +2069,10 @@ h2, h3, p {
     top: 0;
     right: 0;
     z-index: 99;
+  }
+  .navbar__search #text-error {
+    font-size: 12px;
+    top: 26px;
   }
   .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
@@ -2253,9 +2326,17 @@ h2, h3, p {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer__input-group #name-error {
+    top: 33px;
+    right: 5px;
+  }
+  .footer__input-group #phone-error {
+    top: 97px;
+    right: 5px;
   }
 }
 
@@ -2421,6 +2502,30 @@ h2, h3, p {
         flex-wrap: wrap;
     width: 100%;
   }
+  .modal__form #name-error {
+    font-size: 12px;
+    top: 91px;
+    right: 67px;
+  }
+  .modal__form #phone-error {
+    font-size: 12px;
+    top: 146px;
+    right: 67px;
+  }
+  .modal__form #email-error {
+    font-size: 12px;
+    top: 201px;
+    right: 67px;
+  }
+  .footer__input-group #name-error {
+    font-size: 12px;
+  }
+  .footer__input-group #phone-error {
+    font-size: 12px;
+  }
+  .subscribe #email-error {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -2552,6 +2657,18 @@ h2, h3, p {
   }
   .modal__input {
     font-size: 10px;
+  }
+  .modal__form #name-error {
+    top: 93px;
+    right: 47px;
+  }
+  .modal__form #phone-error {
+    top: 148px;
+    right: 47px;
+  }
+  .modal__form #email-error {
+    top: 203px;
+    right: 46px;
   }
 }
 

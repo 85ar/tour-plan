@@ -37,6 +37,7 @@
     align-items: start
     justify-content: space-between
     flex-wrap: wrap
+    position: relative
   &__ul
     padding: 0
     margin: 0
@@ -75,14 +76,22 @@
     text-decoration: none
     color: inherit
   &__input
-    margin-bottom: 15px
-    flex-basis: 48%
-    outline: none
-    font-style: normal
-    font-weight: normal
-    font-size: 12px
-    line-height: 15px
-    color: $dark
+    width: 100%
+    &-group
+      margin-bottom: 15px
+      flex-basis: 48%
+      outline: none
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $dark
+      #name-error
+        top: 34px
+        right: 288px
+      #phone-error
+        top: 34px
+        right: 5px
   &__message
     flex-basis: 100%
     margin-bottom: 23px
@@ -127,3 +136,8 @@
     color: $footer-text-color
   &__phones
     white-space: nowrap
+  &__infoButton
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
