@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://api-maps.yandex.ru/2.1/?apikey=dd6820b2-80de-408b-9d1f-33489125eec4&lang=ru_RU"></script>
   </head>
@@ -18,7 +19,7 @@
     <header class="navbar navbar--mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -27,6 +28,8 @@
           </a>
 
           <form
+          data-aos="fade-right"
+          data-aos-delay="200"
             action="#"
             class="search navbar__search navbar__search--mobile--hidden form"
           >
@@ -42,7 +45,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right" data-aos-delay="300">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -280,7 +283,7 @@
       <div class="container">
         <h2 class="otherPackages__title">Other Packages</h2>
         <div class="otherPackages-wrapper">
-          <div class="tripAdvisor-card-wide trip-1">
+          <div class="tripAdvisor-card-wide trip-1"data-aos="fade-right">
             <div class="advisor-card-image-wide">
               <img
                 src="img/advisor-image-1.jpg"
@@ -347,7 +350,8 @@
           </div>
           <!-- /.tripAdvisor-card 1-->
 
-          <div class="tripAdvisor-card trip-2">
+          <div class="tripAdvisor-card trip-2" data-aos="fade-left"
+          data-aos-delay="500">
             <div class="advisor-card-image">
               <img
                 src="img/advisor-image-2.jpg"
@@ -400,7 +404,8 @@
             </div>
           </div>
           <!-- /.tripAdvisor-card 2 -->
-          <div class="tripAdvisor-card trip-3">
+          <div class="tripAdvisor-card trip-3" data-aos="fade-up"
+     data-aos-duration="3000">
             <div class="advisor-card-image">
               <img
                 src="img/advisor-image-3.jpg"
@@ -452,7 +457,8 @@
             </div>
           </div>
           <!-- /.tripAdvisor-card 3 -->
-          <div class="tripAdvisor-card trip-4">
+          <div class="tripAdvisor-card trip-4" data-aos="fade-up"
+     data-aos-duration="3000">
             <div class="advisor-card-image">
               <img
                 src="img/advisor-image-4.jpg"
@@ -504,7 +510,8 @@
             </div>
           </div>
           <!-- /.tripAdvisor-card 4 -->
-          <div class="tripAdvisor-card trip-5">
+          <div class="tripAdvisor-card trip-5" data-aos="fade-up"
+     data-aos-duration="3000">
             <div class="advisor-card-image">
               <img
                 src="img/advisor-image-5.jpg"
@@ -751,7 +758,7 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -761,7 +768,7 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -771,7 +778,7 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -784,7 +791,7 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery
@@ -805,7 +812,7 @@ quest"
       <footer class="footer">
         <div class="container">
           <div class="footer-wrapper">
-            <a href="index.html" class="logo footer__logo">
+            <a href="index.html" class="logo footer__logo" data-aos="flip-right" data-aos-duration="3000">
               <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
             </a>
             <div class="footer__list footer__categories">
@@ -1079,6 +1086,7 @@ quest"
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
