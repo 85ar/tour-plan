@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=dd6820b2-80de-408b-9d1f-33489125eec4&lang=ru_RU"></script>
   </head>
   <body>
     <header class="navbar navbar--mobile-fixed">
@@ -28,8 +29,8 @@
           </a>
 
           <form
-          data-aos="fade-right"
-          data-aos-delay="200"
+            data-aos="fade-right"
+            data-aos-delay="200"
             action="#"
             class="search navbar__search navbar__search--mobile--hidden form"
           >
@@ -45,7 +46,12 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right" data-aos-delay="300">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -151,11 +157,11 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
+                <img src="img/star.svg" class="star-image" alt="star" />
+                <img src="img/star.svg" class="star-image" alt="star" />
+                <img src="img/star.svg" class="star-image" alt="star" />
+                <img src="img/star.svg" class="star-image" alt="star" />
+                <img src="img/star.svg" class="star-image" alt="star" />
               </div>
               <h1 class="hotel-name hotel-info__name">grand hilton hotel</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -270,7 +276,16 @@
               <!-- /.button booking__button -->
             </div>
             <!-- /.booking -->
-            <div id="map"></div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.041314064911!2d98.29267083251484!3d7.890746780694847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1615314310176!5m2!1sru!2sru"
+                class="map-google"
+                height="213"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
@@ -283,7 +298,7 @@
       <div class="container">
         <h2 class="otherPackages__title">Other Packages</h2>
         <div class="otherPackages-wrapper">
-          <div class="tripAdvisor-card-wide trip-1"data-aos="fade-right">
+          <div class="tripAdvisor-card-wide trip-1" data-aos="fade-right">
             <div class="advisor-card-image-wide">
               <img
                 src="img/advisor-image-1.jpg"
@@ -294,11 +309,11 @@
             </div>
             <div class="advisor-card-info-wide">
               <div class="stars">
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
+                <img src="img/star.svg" class="star-image" alt="star" />
+                <img src="img/star.svg" class="star-image" alt="star" />
+                <img src="img/star.svg" class="star-image" alt="star" />
+                <img src="img/star.svg" class="star-image" alt="star" />
+                <img src="img/star.svg" class="star-image" alt="star" />
               </div>
               <h3 class="advisor-card-title-wide">Hotel Blue Haven</h3>
               <p class="advisor-card-hotelDescription">
@@ -350,8 +365,11 @@
           </div>
           <!-- /.tripAdvisor-card 1-->
 
-          <div class="tripAdvisor-card trip-2" data-aos="fade-left"
-          data-aos-delay="500">
+          <div
+            class="tripAdvisor-card trip-2"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
             <div class="advisor-card-image">
               <img
                 src="img/advisor-image-2.jpg"
@@ -404,8 +422,11 @@
             </div>
           </div>
           <!-- /.tripAdvisor-card 2 -->
-          <div class="tripAdvisor-card trip-3" data-aos="fade-up"
-     data-aos-duration="3000">
+          <div
+            class="tripAdvisor-card trip-3"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div class="advisor-card-image">
               <img
                 src="img/advisor-image-3.jpg"
@@ -457,8 +478,11 @@
             </div>
           </div>
           <!-- /.tripAdvisor-card 3 -->
-          <div class="tripAdvisor-card trip-4" data-aos="fade-up"
-     data-aos-duration="3000">
+          <div
+            class="tripAdvisor-card trip-4"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div class="advisor-card-image">
               <img
                 src="img/advisor-image-4.jpg"
@@ -510,8 +534,11 @@
             </div>
           </div>
           <!-- /.tripAdvisor-card 4 -->
-          <div class="tripAdvisor-card trip-5" data-aos="fade-up"
-     data-aos-duration="3000">
+          <div
+            class="tripAdvisor-card trip-5"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div class="advisor-card-image">
               <img
                 src="img/advisor-image-5.jpg"
@@ -758,7 +785,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -768,7 +799,11 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -778,7 +813,11 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -791,7 +830,11 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery
@@ -812,7 +855,12 @@ quest"
       <footer class="footer">
         <div class="container">
           <div class="footer-wrapper">
-            <a href="index.html" class="logo footer__logo" data-aos="flip-right" data-aos-duration="3000">
+            <a
+              href="index.html"
+              class="logo footer__logo"
+              data-aos="flip-right"
+              data-aos-duration="2000"
+            >
               <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
             </a>
             <div class="footer__list footer__categories">
@@ -877,13 +925,13 @@ quest"
                 Social Network
               </h3>
               <div class="footer__social-links">
-                <a href="#" class="footer-link"
+                <a href="https://www.facebook.com/" class="footer-link"
                   ><img src="img/facebook.svg" alt="Icon: facebook"
                 /></a>
-                <a href="#" class="footer-link"
+                <a href="https://www.youtube.com/" class="footer-link"
                   ><img src="img/yourtube.svg" alt="Icon: yourtube"
                 /></a>
-                <a href="#" class="footer-link"
+                <a href="https://www.instagram.com/?hl=ru" class="footer-link"
                   ><img src="img/instagram.svg" alt="Icon: instagram"
                 /></a>
               </div>
@@ -972,7 +1020,7 @@ quest"
             </div>
             <!-- /.footer__contact-details -->
             <div class="footer__contact-form">
-              <h3 class="footer__title footer__title--mb-3">
+              <h3 class="footer__title footer__title--form">
                 Send us a message
               </h3>
               <form action="send.php" method="POST" class="footer__form form">
@@ -993,6 +1041,7 @@ quest"
                     placeholder="Phone Number*"
                     name="phone"
                     required
+                    minlength="18"
                   />
                 </div>
                 <textarea
@@ -1014,13 +1063,13 @@ quest"
             <div class="footer__agreements">
               <ul class="footer__info-ul">
                 <li class="footer__condition">
-                  <a href="#" class="footer__link">Disclaimer</a>
+                  <a href="#" class="footer__link agreements">Disclaimer</a>
                 </li>
                 <li class="footer__condition">
-                  <a href="#" class="footer__link">Conditions of use</a>
+                  <a href="#" class="footer__link agreements">Conditions of use</a>
                 </li>
                 <li class="footer__condition">
-                  <a href="#" class="footer__link">Cancellation policy</a>
+                  <a href="#" class="footer__link agreements">Cancellation policy</a>
                 </li>
               </ul>
               <img src="img/pay.png" alt="Icon: pay" />
@@ -1054,7 +1103,7 @@ quest"
               placeholder="Phone Number*"
               required
               name="phone"
-              minlength="2"
+              minlength="18"
             />
             <input
               type="email"

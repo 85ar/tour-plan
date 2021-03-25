@@ -21,19 +21,6 @@ $(document).ready(function () {
     },
   });
 
-  ymaps.ready(init);
-
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: [7.89074, 98.294774],
-      zoom: 16,
-    });
-    var myPlacemark = new ymaps.Placemark([7.89074, 98.294774], {
-      hintContent: "Grand Hilton Hotel",
-    });
-    myMap.geoObjects.add(myPlacemark);
-  }
-
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
@@ -81,6 +68,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Enter your phone number",
+          minlength: "Phone type: +7 (999) 999-99-99",
         },
         text: {
           required: "Enter your location",
@@ -92,4 +80,11 @@ $(document).ready(function () {
     $('input[name="phone"]').mask("+7 (999) 999-99-99");
   });
   AOS.init();
+
+  AOS.init({
+    disable: function () {
+      var maxWidth = 992;
+      return window.innerWidth < maxWidth;
+    },
+  });
 });
