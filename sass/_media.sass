@@ -73,6 +73,7 @@
       width: 100%
   .booking
     width: 340px
+    padding: 29px 22px 26px 23px
   .map
     width: 340px
     &-google
@@ -542,6 +543,11 @@
           width: 245px
     &__search
       margin-left: auto
+  .search
+    &__input
+    &__button
+      top: -40px
+      left: 180px
   .hotel
     &-right
       display: flex
@@ -552,6 +558,15 @@
         max-width: 280px
     &-slider
       height: 179px
+      &__button
+        &--prev
+          height: 7px
+          width: 4px
+          left: 9px
+        &--next
+          height: 7px
+          width: 4px
+          right: 8px
   .booking
     height: 210px
     margin-bottom: 20px
@@ -659,7 +674,7 @@
   .modal
     &__dialog
       &--visible
-        padding: 15px 40px 15px 40px
+        padding: 25px 40px
         max-width: 340px
         min-width: 315px
     &__form
@@ -700,17 +715,16 @@
             width: 100%
         &:focus
           color: $primary
-  .user
-    &__avatar
+    &__user
       &:hover
-        box-shadow: 0 0 23px #2a598f
-    &__name
-      &:hover
-        color: $primary
+        box-shadow: 0 0 8px #74d3f0
   .booking
     &__button
       &:hover
         box-shadow: 0 0 8px #74d3f0
+    &__number
+      &:hover
+        color: #f76767
   .advisor-card-btn
     &:hover
       box-shadow: 0 0 8px #74d3f0
@@ -759,3 +773,29 @@
     &__image
       &:hover
         box-shadow: 0 0 23px #2a598f
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          color: $primary
+  .reviews
+    &-slider
+      &__item
+        &::before
+          content: ""
+          position: absolute
+          left: 62px
+          top: 13px
+          width: 70px
+          height: 47px
+          background-image: url(../img/quote-left.svg)
+          background-repeat: no-repeat
+        &::after
+          content: ""
+          position: absolute
+          right: 62px
+          top: 118px
+          width: 70px
+          height: 47px
+          background-image: url(../img/quote-right.svg)
+          background-repeat: no-repeat
